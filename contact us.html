@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tshego's Goodies and Cafe | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <header>
+         <div class="logo">Tshego's Goodies and Cafe</div>
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Product</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+     <section class="page-banner">
+        <h1>Contact Us</h1>
+    </section>
+
+    <section class="content">
+        <h2>Contact Information</h2>
+        <p><strong>Location:</strong> Mamelodi,Pretoria,South Africa</p>
+        <p><strong> Phone No:</strong> 012 842 2456</p>
+        <p><strong>Email:</strong>info@Tshego's Goodies and Cafe.co.za</p>
+        <p><strong>Opening Hours:</strong>Monday to Saturday, 8:00 - 18:00</p>
+
+        <h2>Send us a Message</h2>
+
+        <form onsuubmit="sendMessage(event)">
+            <label>Name:</label>
+            <input type="text" id="email" required>
+            
+            <label>Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2026 Tshego's Goodies and Cafe</p>
+    </footer>
+
+    <script>
+        function sendMessage(event){
+            event.preventDefault();
+            alert("Thank you! Your message has been received.");
+        }
+    </script>
+
+</body>
+</html>
